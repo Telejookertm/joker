@@ -221,6 +221,8 @@ function create_config( )
     "get",
     "broadcast",
     "download_media",
+    "Supergroup",
+    "PmLoad",
     "invite",
     "all",
     "leave_ban",
