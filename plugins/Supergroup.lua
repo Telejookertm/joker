@@ -1906,11 +1906,11 @@ local function run(msg, matches)
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked Tag ")
 				return lock_group_tag(msg, data, target)
 			end
-			if matches[2] == 'webpage' then
+			if matches[2] == 'web' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked WebLink ")
 				return lock_group_webpage(msg, data, target)
 			end
-			if matches[2] == 'forward' then
+			if matches[2] == 'fwd' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked Forward Msg ")
 				return lock_group_fwd(msg, data, target)
 			end
@@ -1996,7 +1996,7 @@ local function run(msg, matches)
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked Tag")
 				return unlock_group_tag(msg, data, target)
 			end
-			if matches[2] == 'webpage' then
+			if matches[2] == 'web' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked WebLink")
 				return unlock_group_webpage(msg, data, target)
 			end
@@ -2008,7 +2008,7 @@ local function run(msg, matches)
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked English")
 				return unlock_group_eng(msg, data, target)
 			end
-			if matches[2] == 'forward' then
+			if matches[2] == 'fwd' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked Forward Msg")
 				return unlock_group_fwd(msg, data, target)
 			end
